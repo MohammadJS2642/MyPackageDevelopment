@@ -10,8 +10,10 @@
 
         public static string SomeText()
         {
-            return "Development";
+            return Status;
         }
+
+        public static string Status = "Development";
 
     }
 }
