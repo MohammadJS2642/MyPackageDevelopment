@@ -2,6 +2,8 @@
 {
     public class MyPackageDevelopment
     {
+        
+        public static string Status = "Development";
 
         public static void Log(string logString)
         {
@@ -13,7 +15,6 @@
             return Status;
         }
 
-        public static string Status = "Development";
 
     }
 }
