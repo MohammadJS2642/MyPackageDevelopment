@@ -25,7 +25,6 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release /p:Version=${VERSION}
       - name: Packaging
-        working-directory: ../
         run: ls
       - name: Push
         run: dotnet nuget push NuGet.Workflow.${VERSION}.nupkg --source https://nuget.pkg.github.com/mohammadjs/index.json --api-key ${GITHUB_TOKEN}
