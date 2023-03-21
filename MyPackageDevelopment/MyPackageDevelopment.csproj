@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<PackageId>Nuget.Workflow</PackageId>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/MohammadJS2642/MyPackageDevelopment</RepositoryUrl>
+	</PropertyGroup>
+
 </Project>

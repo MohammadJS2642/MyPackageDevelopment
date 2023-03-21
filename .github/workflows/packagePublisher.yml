@@ -33,6 +33,6 @@ jobs:
       - name: Push
         working-directory: ./MyPackageDevelopment
         #run: ls
-        run: dotnet nuget push "MyPackageDevelopment.${VERSION}.nupkg" --source "https://nuget.pkg.github.com/mohammadjs/index.json" --api-key ${GITHUB_TOKEN}
+        run: dotnet nuget push NuGet.Workflow.${VERSION}.nupkg --source "https://nuget.pkg.github.com/mohammadjs/index.json" --api-key ${GITHUB_TOKEN}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
