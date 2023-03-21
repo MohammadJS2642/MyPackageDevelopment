@@ -30,4 +30,4 @@ jobs:
       - name: Push
         working-directory: ./MyPackageDevelopment
         #run: ls
-        run: dotnet nuget push MyPackageDevelopment.${VERSION}.nupkg --source https://nuget.pkg.github.com/mohammadjs/index.json --api-key ${{ secrets.GITHUB_TOKEN }}
+        run: dotnet nuget push ./MyPackageDevelopment.${VERSION}.nupkg --source https://nuget.pkg.github.com/mohammadjs/index.json --api-key ${{ secrets.GITHUB_TOKEN }}
