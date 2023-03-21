@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
 	<PropertyGroup>
-		<PackageId>Nuget.Workflow</PackageId>
+		<PackageId>MyPackageDevelopment</PackageId>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/MohammadJS2642/MyPackageDevelopment.git</RepositoryUrl>
 	</PropertyGroup>
