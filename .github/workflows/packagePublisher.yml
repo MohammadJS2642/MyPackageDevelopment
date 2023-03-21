@@ -32,10 +32,10 @@ jobs:
         run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
       - name: Add source
         run: |
-          dotnet nuget add source "https://nuget.pkg.github.com/mohammadjs/index.json" --username OctopusSamples --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github
+          dotnet nuget add source "https://nuget.pkg.github.com/mohammadjs/index.json" --username mohammadjs  --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/mohammadjs/index.json"
       - name: Push
         working-directory: ./MyPackageDevelopment
         #run: ls
-        run: dotnet nuget push NuGet.Workflow.${VERSION}.nupkg --source "https://nuget.pkg.github.com/mohammadjs/index.json" --api-key ${GITHUB_TOKEN}
+        run: dotnet nuget push *.${VERSION}.nupkg --source github --api-key ${GITHUB_TOKEN}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
