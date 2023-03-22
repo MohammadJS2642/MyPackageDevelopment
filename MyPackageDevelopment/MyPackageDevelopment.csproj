@@ -7,7 +7,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<PackageId>MyPackageDevelopment</PackageId>
+		<PackageId>MyPackageDevelopmentPackage</PackageId>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/MohammadJS2642/MyPackageDevelopment.git</RepositoryUrl>
 	</PropertyGroup>
